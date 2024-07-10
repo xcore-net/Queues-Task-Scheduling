@@ -33,6 +33,7 @@
                                     >
                                         Dashboard
                                     </a>
+                                    
                                 @else
                                     <a
                                         href="{{ route('login') }}"
@@ -162,9 +163,15 @@
                         </div>
                     </main>
 
+                    <form method="GET" action="dispatch-job">
+                        @csrf
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded">Dispatch Job</button>
+                    </form>
+
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </footer>
+                    
                 </div>
             </div>
         </div>

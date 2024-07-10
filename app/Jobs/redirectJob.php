@@ -11,11 +11,11 @@ use Illuminate\Queue\SerializesModels;
 class redirectJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-public $route;
+    public $route;
     /**
      * Create a new job instance.
      */
-    public function __construct()
+    public function __construct($route)
     {
         $this->route = $route;
     }
@@ -25,6 +25,8 @@ public $route;
      */
     public function handle(): void
     {
-        redirectJob::dispatch($route);
+        DB::table('fff')->insert([
+            'hhhhh' => 'sh'
+        ]);
     }
 }
