@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\jobController;
+use App\Http\Controllers\FlowerController;
+
 use App\Http\Controllers\LanguageController;
 use App\Jobs\redirectJob;
 
@@ -14,6 +16,7 @@ Route::get('/', function () {
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/flower', [FlowerController::class, 'index']);
 
 Route::get('/dispatch-job', [jobController::class,'dis']);
 Route::get('/dispatch-job', [jobController::class,'collections1']);
