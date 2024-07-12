@@ -168,6 +168,27 @@
                         <button type="submit" class="bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded">Dispatch Job</button>
                     </form>
 
+                    <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                        <form id="langform" action="{{ route('user.lang') }}" method="get" class="d-flex align-items-center">
+                        
+                        <select class="form-select" name="lang" id="lang" onchange="this.form.submit()">
+                        
+                            <option disabled>Language</option>
+                        
+                            <option value="en" @if (Session::get('locale', 'en') == 'en') selected @endif> English</option>
+                        
+                            <option value="ar" @if (session('locale') == 'ar') selected @endif> Arabic</option>
+                        
+                        </select>
+                        
+                        </form>
+                        </div>
+                    <h1>{{ __('flower.flower') }}</h1>
+                  
+                    
+                    {{$tt = 25;}}
+                  
+                                            {{$tt}}
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </footer>

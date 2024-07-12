@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #ea1515;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,7 +16,7 @@
             height: 100vh;
         }
         .container {
-            background-color: #fff;
+            background-color: #f41bf4;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,17 @@
 <body>
     <div class="container">
         <h1>Welcome to a Beautiful View</h1>
-        <p>This is a simple, beautiful view created using HTML and CSS.</p>
+      
+        
+      @php $water 
+      @endphp
+      {{$water}}
+
+      @php $collection
+      @endphp
+       
+        {{$collection;}}
+     
     </div>
 </body>
 </html>
