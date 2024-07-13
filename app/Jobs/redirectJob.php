@@ -17,9 +17,9 @@ class redirectJob implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct($route)
+    public function __construct()
     {
-        $this->route = $route;
+        
     }
 
     /**
@@ -28,7 +28,7 @@ class redirectJob implements ShouldQueue
     public function handle(): void
     {
         DB::table('fff')->insert([
-            'hhhhh' => 'shahd'
+            'hhhhh' => 'shahds'
         ]);
     }
 }

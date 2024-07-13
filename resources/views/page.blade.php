@@ -31,15 +31,15 @@
     <div class="container">
         <h1>Welcome to a Beautiful View</h1>
       
-        
+{{--         
       @php $water 
       @endphp
-      {{$water}}
-
+      {{$water}} --}}
+{{-- 
       @php $collection
       @endphp
        
-        {{$collection;}}
+        {{$collection;}} --}}
      
     </div>
 </body>
