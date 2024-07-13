@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\jobController;
 use App\Http\Controllers\FlowerController;
+use App\Http\Controllers\EmailController;
 
 use App\Http\Controllers\LanguageController;
 use App\Jobs\redirectJob;
@@ -35,7 +36,7 @@ Route::get('/page',function(){
 });
 
 Route::get('/lang',[LanguageController::class , 'change'])->name('user.lang');
-
+Route::get('/send-test-email', [EmailController::class, 'sendTestEmail']);
 
 Route::get('/', function () {
     // User::all();
