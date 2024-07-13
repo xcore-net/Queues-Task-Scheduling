@@ -5,7 +5,7 @@
 
     <option disabled>Language</option>
 
-    <option value="en" @if (Session::get('locale', 'en') == 'en') selected @endif> English</option>
+    <option value="en" @if (Context::get('locale') == 'en') selected @endif> English</option>
 
     <option value="ar" @if (session('locale') == 'ar') selected @endif> Arabic</option>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\MainController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,5 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/lang',[LanguageController::class , 'change'])->name('user.lang');
-    
-
+Route::get('/langContext',[LanguageController::class , 'getLang']);
 require __DIR__.'/auth.php';
